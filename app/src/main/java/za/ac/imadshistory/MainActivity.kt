@@ -6,14 +6,12 @@ import android.os.Parcelable
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity() : AppCompatActivity(), Parcelable{
     data class FamousPerson(val name: String, val ageAtDeath: Int)
 
+    // the data for the famous people
     class HistoricalEvent(val year: Int, val description: String) {
         companion object {
             val famousPeople = listOf(
@@ -40,7 +38,7 @@ class MainActivity() : AppCompatActivity(), Parcelable{
         val Genratehistory = findViewById<Button>(R.id.genHistory)
         val clearApp = findViewById<Button>(R.id.clear)
         val txtResult = findViewById<TextView>(R.id.txtview2)
-
+        //the error handling
         Genratehistory.setOnClickListener {
             val inputAge = ageInput.text.toString().trim()
             val age: Int
@@ -70,8 +68,7 @@ class MainActivity() : AppCompatActivity(), Parcelable{
         }
     }
 
-    constructor(parcel: Parcel) : this() {
-    }
+    constructor(parcel: Parcel) : this()
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
 
