@@ -1,4 +1,6 @@
-The History Matching Age App stands as a beacon of educational enlightenment, serving as a bridge between users and historical luminaries. 
-By enabling users to compare their age with that of notable figures from history,
-particularly at the juncture of their passing, 
-the app aspires to kindle an insatiable curiosity and a profound interest in historical narratives among its users.
+Step one open andriod studio
+step two open the app
+step three input your age from a rang of 20 to 100
+then you get your results 
+you push generate histroy 
+then push clear for another try at another ags
